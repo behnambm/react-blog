@@ -131,3 +131,17 @@ body {
 .gray {
   color: rgba(0,0,0,0.7) !important;
 }
+
+.comment {
+  margin: 0 0 15px 0;
+  background-color: #eee;
+  padding: 5px;
+  border-radius: 5px;
+}
+.comment h3 {
+  margin: 0;
+}
+
+.comment p {
+  margin: 0;
+}

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
 import Author from "./Author";
+import Comments from "./Comments";
 
 const Detail = () => {
     const params = useParams();
@@ -18,6 +19,8 @@ const Detail = () => {
                     <h1>{ post.title }</h1>
                     <Author userId={ post.userId }/>
                     <p>{ post.body }</p>
+                    <hr />
+                    <Comments postId={ post.id }/>
                 </div>
             )}
         </div>
