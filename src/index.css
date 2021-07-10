@@ -119,3 +119,7 @@ body {
 .post-detail p {
   color: rgba(0,0,0,0.75);
 }
+
+.author-info a {
+  color: rgba(0,0,0,0.7);
+}

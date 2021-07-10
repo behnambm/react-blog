@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import useFetch from "../hooks/useFetch";
+import Author from "./Author";
 
 const Detail = () => {
     const params = useParams();
@@ -15,6 +16,7 @@ const Detail = () => {
             { post && (
                 <div>
                     <h1>{ post.title }</h1>
+                    <Author userId={ post.userId }/>
                     <p>{ post.body }</p>
                 </div>
             )}
