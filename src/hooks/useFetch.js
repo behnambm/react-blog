@@ -15,7 +15,6 @@ const useFetch = (url) => {
             if (!res.ok) {
                 throw Error(res.statusText)
             }
-            console.log(res)
             return res.json();
         }).then((resp_data) => {
             setData(resp_data);

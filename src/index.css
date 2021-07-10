@@ -10,6 +10,12 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 768px) {
+  .app {
+    width: 96%;
+  }
+}
+
 .header {
   display: block;
 }
@@ -55,6 +61,12 @@ body {
 	margin: 5px 10px;
 }
 
+@media (max-width: 768px) {
+  .post-card  {
+    max-width: 90%;
+  }
+}
+
 .post-card p {
   margin: 0;
 }
@@ -93,8 +105,16 @@ body {
   outline: none;
   margin-bottom: 30px;
   width: 100%;
+  max-width: 100%;
   font-size: 1rem;
   padding: 5px;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .create form {
+    width: 90%;
+  }
 }
 
 .create form button {

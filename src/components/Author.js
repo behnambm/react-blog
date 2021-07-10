@@ -3,7 +3,7 @@ import useFetch from "../hooks/useFetch";
 
 const Author = ({ userId }) => {
     const url = 'https://jsonplaceholder.typicode.com/users/' + userId;
-    const { data: author, isPending, error } = useFetch(url);
+    const { data: author, error } = useFetch(url);
 
     return (
         <div className="author-info">

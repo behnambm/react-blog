@@ -19,7 +19,6 @@ const Create = () => {
             headers: {'Content-Type': 'application/json: charset=UTF-8'},
         }).then((res) => {
             if (!res.ok) {
-                console.log(res);
                 let msg = '';
                 if (res.statusText === 'Not Found'){
                     msg = `${res.url} - Not Found !`;

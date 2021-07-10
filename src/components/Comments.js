@@ -8,7 +8,7 @@ const Comments = ({ postId }) => {
         <div className="comment-list">
             { comments && <h2 className="gray">{ `${ comments.length } comments` }</h2>}
             { comments && comments.map((comment) => 
-                <div className="comment">
+                <div className="comment" key={ comment.id }>
                     <h3>{ comment.name }</h3>
                     <p>{ comment.body }</p>
                 </div>
