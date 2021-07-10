@@ -1,7 +1,10 @@
 # react-blog
 This is my first react application which uses https://jsonplaceholder.typicode.com API to get fake data.
 
-## How to use
+🌐 Deployed version: https://laughing-villani-ad1feb.netlify.app
+
+
+## How to use in local
     git clone https://github.com/behnambm/react-blog.git
     cd react-blog
     npm install
