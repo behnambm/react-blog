@@ -22,7 +22,7 @@ const Create = () => {
                 console.log(res);
                 let msg = '';
                 if (res.statusText === 'Not Found'){
-                    msg = res.url + ' - ' + 'Not Found !'
+                    msg = `${res.url} - Not Found !`;
                 }
                 throw Error(msg || res.statusText)
             } else {
