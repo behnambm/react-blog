@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.05rem;
 }
 
 .app {
@@ -36,4 +35,35 @@ body {
   border-bottom: 3px solid #31A5D0;
   cursor: pointer;
 }
+
+.blog-list-title {
+	font-size: 1.7rem;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+
+.post-card {
+  display: inline-block;
+  max-width: 29%;
+  background-color: #32D1BF;
+  padding: 5px;
+  border-radius: 5px;
+  max-height: 200px;
+  min-height: 200px;
+  overflow: hidden;
+	margin: 5px 10px;
+}
+
+.post-card p {
+  margin: 0;
+}
+
+.post-card h4 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+
 
