@@ -1,21 +1,13 @@
-import { useEffect, useState } from "react";
+import useFetch from "../hooks/useFetch";
 import BlogList from "./BlogList";
 
 const Home = () => {
-
-    const [data, setData] = useState(null);
-
-    useEffect(() => {
-        fetch('https://jsonplaceholder.typicode.com/posts')
-        .then((res) => {
-            return res.json();
-        }).then((resp_data) => {
-            setData(resp_data);
-        })
-    }, [])
-
+    const { data, isPending, error } = useFetch('https://jsonplaceholder.typicode.com/posts');
+    
     return (
         <div className="home">
+            { error && <div className="error">{ error }</div>}
+            { isPending && <div className="is-pending">LOADING...</div>}
             { data && <BlogList title="All posts" posts={data} /> }
         </div>
     );
